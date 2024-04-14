@@ -1,0 +1,61 @@
+.page1 {
+  display: flex;
+  flex-direction: row;
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 50vw;
+  }
+
+  .slug {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-block-end: 0.83em;
+    margin-block-start: 0.83em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    unicode-bidi: isolate;
+  }
+  ul li,
+  .list-item {
+    list-style: upper-roman;
+    text-decoration: none;
+  }
+  .header,
+  header {
+    height: 60px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .footer,
+  footer {
+    background: white;
+    border-top: solid 1px gray;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-around;
+    left: 0px;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+  }
+  .main,
+  main {
+    bottom: 60px;
+    left: 0px;
+    max-height: calc(100vh - 120px);
+    overflow-y: scroll;
+    padding: 0 12px;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+  }
+}
