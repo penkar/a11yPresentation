@@ -1,42 +1,28 @@
 export const Colors = () => {
-  const sharedStyle = {
-    alignItems: "center",
-    display: "flex",
-    fontSize: "32px",
-    height: "52px",
-    justifyContent: "center",
-    paddingBottom: "8px",
-    width: "100%",
-  };
-
   const colorPairs = [
     {
-      color: "#ffffff",
-      backgroundColor: "#212121",
-    },
-    {
-      color: "#ffffff",
+      color: "#FFFFFFF",
       backgroundColor: "#494440",
     },
     {
-      color: "#ffffff",
-      backgroundColor: "#0071bc",
+      color: "#FFFFFFF",
+      backgroundColor: "#0071BC",
     },
     {
-      color: "#ffffff",
-      backgroundColor: "#2e8540",
+      color: "#FFFFFFF",
+      backgroundColor: "#2E8540",
     },
     {
-      color: "#ffffff",
-      backgroundColor: "#e31c3d",
-    },
-    {
-      color: "#212121",
-      backgroundColor: "#fad980",
+      color: "#FFFFFFF",
+      backgroundColor: "#E31C3D",
     },
     {
       color: "#212121",
-      backgroundColor: "#e4e2e0",
+      backgroundColor: "#FAD980",
+    },
+    {
+      color: "#212121",
+      backgroundColor: "#E4E2E0",
     },
     {
       color: "#212121",
@@ -44,16 +30,20 @@ export const Colors = () => {
     },
     {
       color: "#212121",
-      backgroundColor: "#fff1d2",
+      backgroundColor: "#FFF1D2",
     },
     {
-      color: "#504e4e",
+      color: "#504E4E",
       backgroundColor: "#212121",
     },
 
     {
-      color: "#d3c39f",
-      backgroundColor: "#fff1d2",
+      color: "#D3C39F",
+      backgroundColor: "#FFF1E2",
+    },
+    {
+      color: "#FFFFFFF",
+      backgroundColor: "#212121",
     },
   ];
 
@@ -61,11 +51,11 @@ export const Colors = () => {
     <>
       {colorPairs.map(({ color, backgroundColor }) => (
         <div
+          className="color-row"
           key={`${color}-${backgroundColor}`}
           style={{
             color,
             backgroundColor,
-            ...sharedStyle,
           }}
         >
           {`${color} on ${backgroundColor}`}

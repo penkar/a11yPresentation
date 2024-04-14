@@ -76,6 +76,16 @@ main.vertical {
   filter: brightness(0.85);
 }
 
+.color-row {
+  align-items: center;
+  display: flex;
+  font-size: 32px;
+  height: 52px;
+  justify-content: center;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
 form fieldset {
   border-radius: 4px;
   min-width: 600px;
